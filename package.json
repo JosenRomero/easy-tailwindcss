@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "easy-tailwindcss.helloWorld",
-        "title": "Hello World"
+        "command": "easy-tailwindcss.helpMeWithTailwindCss",
+        "title": "Help me with TailwindCss"
       }
     ]
   },
