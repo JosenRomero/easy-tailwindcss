@@ -17,7 +17,24 @@
         "command": "easy-tailwindcss.helpMeWithTailwindCss",
         "title": "Help me with TailwindCss"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "first-view",
+          "title": "Easy Tailwind",
+          "icon": ""
+        }
+      ]
+    },
+    "views": {
+      "first-view": [
+        {
+          "id": "principal",
+          "name": ""
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
