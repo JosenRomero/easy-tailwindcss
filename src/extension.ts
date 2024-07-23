@@ -4,12 +4,15 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 
 export let genAI: GoogleGenerativeAI;
 
+export let isConnection: Boolean = false;
+
 export async function activate(context: vscode.ExtensionContext) {
 
 	let apikey: string | undefined = await context.secrets.get("apikey");
 
 	if (apikey) {
 		genAI = new GoogleGenerativeAI(apikey);
+		isConnection = true;
 	}
 
 	// The command has been defined in the package.json file
@@ -30,6 +33,7 @@ export async function activate(context: vscode.ExtensionContext) {
 			if (value) {
 				await context.secrets.store("apikey", value);
 				genAI = new GoogleGenerativeAI(value);
+				isConnection = true;
 				vscode.window.showInformationMessage("API key successfully added!");
 			}
 
