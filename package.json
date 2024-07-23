@@ -16,6 +16,10 @@
       {
         "command": "easy-tailwindcss.helpMeWithTailwindCss",
         "title": "Help me with TailwindCss"
+      },
+      {
+        "command": "easy-tailwindcss.askAPIkey",
+        "title": "Add your API key"
       }
     ],
     "viewsContainers": {
@@ -32,6 +36,13 @@
         {
           "id": "principal",
           "name": ""
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "easy-tailwindcss.askAPIkey"
         }
       ]
     }
