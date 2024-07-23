@@ -1,4 +1,4 @@
-import { genAI } from "./aiConfig";
+import { genAI } from "../extension";
 import { instruction } from "./utils";
 
 const aiMessage = async (message: string): Promise<string> => {

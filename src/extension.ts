@@ -1,9 +1,16 @@
 import * as vscode from 'vscode';
 import * as commands from "./commands";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
-export function activate(context: vscode.ExtensionContext) {
+export let genAI: GoogleGenerativeAI;
 
-	console.log('Congratulations, your extension "easy-tailwindcss" is now active!');
+export async function activate(context: vscode.ExtensionContext) {
+
+	let apikey: string | undefined = await context.secrets.get("apikey");
+
+	if (apikey) {
+		genAI = new GoogleGenerativeAI(apikey);
+	}
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand
