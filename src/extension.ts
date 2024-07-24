@@ -1,5 +1,6 @@
 import * as vscode from 'vscode';
 import * as commands from "./commands";
+import { MessageWebViewProvider } from "./providers/MessageWebViewProvider";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
 export let genAI: GoogleGenerativeAI;
@@ -14,6 +15,13 @@ export async function activate(context: vscode.ExtensionContext) {
 		genAI = new GoogleGenerativeAI(apikey);
 		isConnection = true;
 	}
+
+	context.subscriptions.push(
+		vscode.window.registerWebviewViewProvider(
+			MessageWebViewProvider.viewType,
+			new MessageWebViewProvider(context.extensionUri)
+		)
+	);
 
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with registerCommand

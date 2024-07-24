@@ -36,6 +36,11 @@
         {
           "id": "principal",
           "name": ""
+        },
+        {
+          "type": "webview",
+          "id": "easy-tailwindcss.messagesView",
+          "name": "Add Message"
         }
       ]
     },
