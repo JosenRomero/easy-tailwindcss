@@ -23,6 +23,17 @@ export class MessageWebViewProvider implements vscode.WebviewViewProvider {
     };
 
     webviewView.webview.html = this._getHtmlForWebview(webviewView.webview);
+
+    webviewView.webview.onDidReceiveMessage(message => {
+      switch(message.command) {
+        case 'helpMeWithCssAndInfo':
+          vscode.commands.executeCommand('easy-tailwindcss.helpMeWithCssAndInfo', message.text);
+          break;
+        case 'showError':
+          vscode.window.showErrorMessage(message.text);
+          break;
+      }
+    });
     
   }
 
