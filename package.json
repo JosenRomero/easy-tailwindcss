@@ -18,6 +18,10 @@
         "title": "Help me with TailwindCss"
       },
       {
+        "command": "easy-tailwindcss.helpMeWithCssAndInfo",
+        "title": "Help me with Css and Information"
+      },
+      {
         "command": "easy-tailwindcss.askAPIkey",
         "title": "Add your API key"
       }

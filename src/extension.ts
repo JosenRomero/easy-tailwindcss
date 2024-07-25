@@ -32,6 +32,10 @@ export async function activate(context: vscode.ExtensionContext) {
   );
 
 	context.subscriptions.push(
+    vscode.commands.registerCommand("easy-tailwindcss.helpMeWithCssAndInfo", commands.helpMeWithCssAndInfo)
+  );
+
+	context.subscriptions.push(
     vscode.commands.registerCommand("easy-tailwindcss.askAPIkey", async () => {
 
 			let value = await vscode.window.showInputBox({
