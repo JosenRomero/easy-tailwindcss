@@ -38,8 +38,9 @@
     "views": {
       "first-view": [
         {
-          "id": "principal",
-          "name": ""
+          "type": "webview",
+          "id": "easy-tailwindcss.connectionView",
+          "name": "Connection"
         },
         {
           "type": "webview",
