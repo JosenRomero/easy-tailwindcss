@@ -3,7 +3,7 @@ import * as vscode from 'vscode';
 export class MessageWebViewProvider implements vscode.WebviewViewProvider {
 
   // The viewType must match the id field in package.json
-  public static readonly viewType = "easy-tailwindcss.messagesView";
+  public static readonly viewType = "easy-tailwindcss.tailwindCssHelperView";
 
   constructor(private readonly _extensionUri: vscode.Uri) {}
 

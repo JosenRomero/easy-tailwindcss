@@ -43,8 +43,8 @@
         },
         {
           "type": "webview",
-          "id": "easy-tailwindcss.messagesView",
-          "name": "Add Message"
+          "id": "easy-tailwindcss.tailwindCssHelperView",
+          "name": "TailwindCSS Helper"
         }
       ]
     },
