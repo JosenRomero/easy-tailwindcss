@@ -23,7 +23,11 @@
       },
       {
         "command": "easy-tailwindcss.askAPIkey",
-        "title": "Add your API key"
+        "title": "Add your API key",
+        "icon": {
+          "light": "media/light/add.svg",
+          "dark": "media/dark/add.svg"
+        }
       }
     ],
     "viewsContainers": {
@@ -52,7 +56,9 @@
     "menus": {
       "view/title": [
         {
-          "command": "easy-tailwindcss.askAPIkey"
+          "command": "easy-tailwindcss.askAPIkey",
+          "when": "view == easy-tailwindcss.connectionView",
+          "group": "navigation"
         }
       ]
     }
