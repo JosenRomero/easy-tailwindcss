@@ -22,6 +22,14 @@ export class ConnectionWebViewProvider implements vscode.WebviewViewProvider {
     };
 
     webviewView.webview.html = this._getHtmlForWebview(webviewView.webview);
+
+    webviewView.webview.onDidReceiveMessage(message => {
+      switch(message.command) {
+        case 'askAPIkey':
+          vscode.commands.executeCommand('easy-tailwindcss.askAPIkey');
+          break;
+      }
+    });
     
   }
 
@@ -44,7 +52,9 @@ export class ConnectionWebViewProvider implements vscode.WebviewViewProvider {
           <title>Connection</title>
         </head>
         <body>
-          <input type="text" id="add_api_key" placeholder="Add your API key">
+          <div class="container">
+            <button id="btn-addAPIkey">Add your API key</button>
+          </div>
           <script src="${scriptUri}" />
   
         </body>
