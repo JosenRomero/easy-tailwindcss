@@ -46,7 +46,7 @@ export class MessageWebViewProvider implements vscode.WebviewViewProvider {
 
     // Do the same for the stylesheet.
     const styleUri = webview.asWebviewUri(
-      vscode.Uri.joinPath(this._extensionUri, "media", "message-style.css")
+      vscode.Uri.joinPath(this._extensionUri, "media", "main.css")
     );
     
     return `<!DOCTYPE html>
@@ -58,7 +58,7 @@ export class MessageWebViewProvider implements vscode.WebviewViewProvider {
           <title>Webview</title>
         </head>
         <body>
-          <div id="container">
+          <div class="container">
             <p>If you forget how to apply a class or are unsure which one to use, simply describe what you want to achieve in the field below and press the button.</p>
             <input type="text" id="addMessage" placeholder="Describe what you want to achieve with TailwindCSS">
             <button id="btn-addMessage">Get Utility Class</button>
