@@ -16,7 +16,7 @@
   outline: 1px solid #0d6efd;
 }
 
-#btn-addMessage {
+#btn-addMessage, #btn-addAPIkey {
   color: white;
   background-color: #0d6efd;
   margin: 10px 0px;
