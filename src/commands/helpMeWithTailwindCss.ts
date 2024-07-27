@@ -19,7 +19,7 @@ const helpMeWithTailwindCss = async () => {
   }
 
   const res = await aiMessage(message);
-	vscode.window.showInformationMessage(res);
+  vscode.window.showInformationMessage(res);
 
   insertText(res);
 
