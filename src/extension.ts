@@ -2,9 +2,9 @@ import * as vscode from 'vscode';
 import * as commands from "./commands";
 import { MessageWebViewProvider } from "./providers/MessageWebViewProvider";
 import { ConnectionWebViewProvider } from "./providers/ConnectionWebViewProvider";
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { createGoogleGenerativeAI, GoogleGenerativeAIProvider } from "@ai-sdk/google";
 
-export let genAI: GoogleGenerativeAI;
+export let genAI: GoogleGenerativeAIProvider;
 
 export let isConnection: Boolean = false;
 
@@ -12,9 +12,13 @@ export async function activate(context: vscode.ExtensionContext) {
 
   let apikey: string | undefined = await context.secrets.get("apikey");
 
-  if (apikey) {
-    genAI = new GoogleGenerativeAI(apikey);
+  const createGenAi = (apiKey: string) => {
+    genAI = createGoogleGenerativeAI({ apiKey });
     isConnection = true;
+  };
+
+  if (apikey) {
+    createGenAi(apikey);
   }
 
   context.subscriptions.push(
@@ -52,8 +56,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	
       if (value) {
         await context.secrets.store("apikey", value);
-        genAI = new GoogleGenerativeAI(value);
-        isConnection = true;
+        createGenAi(value);
         vscode.window.showInformationMessage("API key successfully added!");
       }
 

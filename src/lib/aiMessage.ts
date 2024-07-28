@@ -1,19 +1,20 @@
+import { generateText } from "ai";
 import { genAI } from "../extension";
 import { instruction } from "./utils";
 
 const aiMessage = async (message: string): Promise<string> => {
   try {
-    const model = genAI.getGenerativeModel({
-      model: "gemini-1.5-pro",
-      systemInstruction: instruction
+
+    const { text } = await generateText({
+      model: genAI('models/gemini-1.5-pro-latest'),
+      system: instruction,
+      prompt: message
     });
 
-    const res = await model.generateContent(message);
-
-    return res.response.text();
+    return text;
 
   } catch (error) {
-    return "Hubo un error";
+    return "";
   }
 };
 
