@@ -11,8 +11,12 @@ const helpMeWithCssAndInfo = async (text: string) => {
   }
 
   const res = await aiMessage(text);
-
-  insertText(res);
+ 
+  if (res) {
+    insertText(res);
+  } else {
+    vscode.window.showErrorMessage("Something went wrong.");
+  }
 
 };
 
