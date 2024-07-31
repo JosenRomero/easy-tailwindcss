@@ -11,7 +11,7 @@ const helpMeWithTailwindCss = async () => {
   }
 
   let message: string | undefined = await vscode.window.showInputBox({
-    prompt: "Enter your message",
+    prompt: "Describe what you want to achieve with TailwindCSS",
   });
 
   if (!message) {
