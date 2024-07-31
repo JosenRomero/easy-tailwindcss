@@ -11,10 +11,10 @@ export const insertText = (text: string) => {
       const selection = editor.selection;
   
       if (selection.isEmpty) {
-        editBuilder.insert(selection.active, text);
+        editBuilder.insert(selection.active, text.trim());
       } else {
         // Replace selected text
-        editBuilder.replace(selection, text);
+        editBuilder.replace(selection, text.trim());
       }
   
     });

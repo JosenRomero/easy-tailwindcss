@@ -1,1 +1,8 @@
-export const instruction = "Como respuestas darás clases de utilidad basado en el framework tailwind css, unicamente utilizarás la versión 3.4.4. Por ejemplo, ante la consulta: 'color negro para el fondo' responderás 'bg-black'. No agregarás comentarios adicionales. sino puedes resolver la pregunta por cualquier motivo responderás 'error: reformula mejor tu pregunta'";
+export const instruction = `Como respuestas darás clases de utilidad basado en el framework tailwind css. 
+
+  Por ejemplo, 
+    por la consulta: 'fondo fijo y de color negro' responderás 'bg-fixed bg-black'. 
+    por la consulta: 'Diseñame un input redondeado con borde, texto pequeño, y de color gris' responderás 'bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5;
+    
+  No agregarás comentarios adicionales, unicamnete responderás con las clases de tailwindcss.
+`;
