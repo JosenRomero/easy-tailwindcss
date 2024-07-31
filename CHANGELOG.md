@@ -1,9 +1,14 @@
 # Change Log
 
-All notable changes to the "easy-tailwindcss" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
 ## [Unreleased]
 
-- Initial release
+### Added
+
+- **Connection Panel**:
+  - Added a button to request the Gemini API key.
+
+- **TailwindCSS Helper Panel**:
+  - Added an input field and a button to communicate with the Gemini API for generating TailwindCSS utility classes.
+
+- **Help and Feedback Panel**:
+  - Added links to documentation and feedback.
