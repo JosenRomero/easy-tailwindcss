@@ -30,3 +30,12 @@
 #btn-addMessage:hover {
   background-color: #0b5ed7;
 }
+
+a {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.disclaimer {
+  margin-bottom: 20px;
+}
