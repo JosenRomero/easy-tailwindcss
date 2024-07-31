@@ -2,6 +2,7 @@ import * as vscode from 'vscode';
 import * as commands from "./commands";
 import { MessageWebViewProvider } from "./providers/MessageWebViewProvider";
 import { ConnectionWebViewProvider } from "./providers/ConnectionWebViewProvider";
+import { HelpAndFeedbackWebviewProvider } from "./providers/HelpAndFeedbackWebviewProvider";
 import { createGoogleGenerativeAI, GoogleGenerativeAIProvider } from "@ai-sdk/google";
 
 export let genAI: GoogleGenerativeAIProvider;
@@ -32,6 +33,13 @@ export async function activate(context: vscode.ExtensionContext) {
     vscode.window.registerWebviewViewProvider(
       ConnectionWebViewProvider.viewType,
       new ConnectionWebViewProvider(context.extensionUri)
+    )
+  );
+
+  context.subscriptions.push(
+    vscode.window.registerWebviewViewProvider(
+      HelpAndFeedbackWebviewProvider.viewType,
+      new HelpAndFeedbackWebviewProvider(context.extensionUri)
     )
   );
 

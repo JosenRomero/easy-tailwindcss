@@ -50,6 +50,11 @@
           "type": "webview",
           "id": "easy-tailwindcss.tailwindCssHelperView",
           "name": "TailwindCSS Helper"
+        },
+        {
+          "type": "webview",
+          "id": "easy-tailwindcss.helpAndFeedbackView",
+          "name": "Help And Feedback"
         }
       ]
     },
