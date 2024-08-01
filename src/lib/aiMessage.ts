@@ -14,7 +14,7 @@ const aiMessage = async (message: string): Promise<string> => {
     return text;
 
   } catch (error) {
-    return "";
+    throw error;
   }
 };
 
