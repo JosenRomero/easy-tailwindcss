@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 
-export const insertText = (text: string) => {
+export const insertText = async (text: string) => {
 
   const editor = vscode.window.activeTextEditor;
 
@@ -19,6 +19,11 @@ export const insertText = (text: string) => {
   
     });
     
+  } else {
+
+    await vscode.env.clipboard.writeText(text);
+    vscode.window.showInformationMessage("No file is currently open. The TailwindCSS class has been copied to the clipboard.");
+
   }
 
 };
