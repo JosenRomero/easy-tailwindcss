@@ -18,3 +18,7 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
 ## Notes
 This extension is not an official TailwindCSS product. 
 It is a third-party tool designed to enhance your development experience with TailwindCSS.
+
+## License
+
+This project is licensed under the Apache License 2.0. See the [LICENSE](https://github.com/JosenRomero/easy-tailwindcss/blob/main/LICENSE.txt) file for details.
