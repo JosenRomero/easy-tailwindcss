@@ -1,7 +1,43 @@
 # easy-tailwindcss for VS Code
 
-easy-tailwindcss is designed to assist developers who are learning and using TailwindCSS. 
+Easy TailwindCss is designed to assist developers who are learning and using TailwindCSS. 
 It provides a convenient way to find and apply TailwindCSS utility classes directly from within Visual Studio Code.
+
+## Usage
+
+- Follow these steps to use the Easy TailwindCss Extension:
+
+1. **Installation**
+  - Go to the Visual Studio Code Marketplace and search for "Easy TailwindCss".
+  - Click "Install" to add the extension to your Visual Studio Code.
+
+2. **API Key Setup**
+  - Open the "Connection" panel from the sidebar.
+  - Click the "Add your API key" button.
+  - Enter your Gemini API key in the input field and press `Enter` to save it.
+
+  ![Image 1 ](https://github.com/JosenRomero/easy-tailwindcss/blob/main/screenshots/img01.png?raw=true)
+  
+3. **Get TailwindCSS utility class**
+
+  There are two ways to obtain the TailwindCSS utility class:
+
+  - **Using the Sidebar Panel**
+
+    - Open the "TailwindCSS Helper" panel from the sidebar.
+    - In the input field, describe the utility class you need, for example, "fixed background".
+    - Click the "Get Utility Class" button.
+    - The extension will insert the correct TailwindCSS class at your cursor position.
+
+  - **Using a Command:**
+
+    This method avoids keeping the sidebar open and can be more convenient if you are not constantly using the sidebar with the extension open.
+
+    - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the Command Palette.
+    - Type `Help me with TailwindCss` and select the command.
+    - Enter your description in the prompt, for example, "fixed background".
+    - The extension will insert the correct TailwindCSS class at your cursor position.
+
 
 ## Features
 
