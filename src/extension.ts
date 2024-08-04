@@ -56,14 +56,29 @@ export async function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand("easy-tailwindcss.askAPIkey", async () => {
 
-      let value = await vscode.window.showInputBox({
+      apikey = await vscode.window.showInputBox({
         prompt: "Enter your Gemini API key"
       });
 	
-      if (value) {
-        await context.secrets.store("apikey", value);
-        createGenAi(value);
+      if (apikey) {
+        await context.secrets.store("apikey", apikey);
+        createGenAi(apikey);
         vscode.window.showInformationMessage("API key successfully added!");
+      }
+
+    })
+  );
+
+  context.subscriptions.push(
+    vscode.commands.registerCommand("easy-tailwindcss.removeAPIkey", async () => {
+
+      if (apikey) {
+        await context.secrets.delete("apikey");
+        isConnection = false;
+        apikey = undefined;
+        vscode.window.showInformationMessage("Your API key has been removed.");
+      } else {
+        vscode.window.showInformationMessage("No API key found.");
       }
 
     })

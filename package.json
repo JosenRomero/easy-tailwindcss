@@ -30,6 +30,10 @@
           "light": "media/light/add.svg",
           "dark": "media/dark/add.svg"
         }
+      },
+      {
+        "command": "easy-tailwindcss.removeAPIkey",
+        "title": "Remove your API key"
       }
     ],
     "viewsContainers": {
@@ -66,6 +70,11 @@
           "command": "easy-tailwindcss.askAPIkey",
           "when": "view == easy-tailwindcss.connectionView",
           "group": "navigation"
+        },
+        {
+          "command": "easy-tailwindcss.removeAPIkey",
+          "when": "view == easy-tailwindcss.connectionView",
+          "group": "inline"
         }
       ]
     }
