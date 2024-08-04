@@ -4,7 +4,7 @@
   "description": "Easy TailwindCss is designed to help you get classes without needing to remember the exact TailwindCSS syntax.",
   "publisher": "josenromero",
   "icon": "media/easy-tailwind-icon.png",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "engines": {
     "vscode": "^1.91.0"
   },
