@@ -1,4 +1,6 @@
-# easy-tailwindcss for VS Code
+# easy-tailwindcss for VSCode
+
+[![Static Badge](https://img.shields.io/badge/Downloads-VSCode_Marketplace-blue)](https://marketplace.visualstudio.com/items?itemName=josenromero.easy-tailwindcss)
 
 Easy TailwindCss is designed to assist developers who are learning and using TailwindCSS. 
 It provides a convenient way to find and apply TailwindCSS utility classes directly from within Visual Studio Code.
