@@ -22,4 +22,9 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - run: echo "my first workflows!"
+    - name: Publish to Visual Studio Marketplace
+      uses: HaaLeo/publish-vscode-extension@v0
+      with:
+        pat: ${{ secrets.VS_MARKETPLACE_TOKEN }}
+        registryUrl: https://marketplace.visualstudio.com
+    
