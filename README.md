@@ -18,7 +18,7 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
   - Click the "Add your API key" button.
   - Enter your Gemini API key in the input field and press `Enter` to save it.
 
-  ![Image 1 ](https://github.com/JosenRomero/easy-tailwindcss/blob/main/screenshots/img01.png?raw=true)
+  ![Add api key](https://raw.githubusercontent.com/JosenRomero/easy-tailwindcss/main/images/add_api_key.gif)
   
 3. **Get TailwindCSS utility class**
 
