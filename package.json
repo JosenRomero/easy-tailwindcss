@@ -5,6 +5,9 @@
   "publisher": "josenromero",
   "icon": "media/easy-tailwind-icon.png",
   "version": "0.5.3",
+  "repository": {
+    "url": "https://github.com/JosenRomero/easy-tailwindcss"
+  },
   "engines": {
     "vscode": "^1.91.0"
   },
