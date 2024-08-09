@@ -1,18 +1,28 @@
-# Change Log
+### Change Log
 
-## v0.5.3
+All notable changes to this project will be documented in this file.
+
+#### v0.5.3
+
+> August 4, 2024
 
   - feat: remove api key functionality
 
-## v0.5.2
+#### v0.5.2
+
+> August 2, 2024
 
   - add default spacing scale to the prompt
 
-## v0.5.1
+#### v0.5.1
+
+> August 2, 2024
 
   - fix: invalid response when the message is about html tags.
 
-## v0.5.0 - 2024-08-01
+#### v0.5.0
+
+> August 1, 2024
 
   ### Added
 
