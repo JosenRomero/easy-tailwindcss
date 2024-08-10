@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+#### v0.6.0
+
+> August 9, 2024
+
+  - feat: add a confirmation box when deleting api key
+
 #### v0.5.3
 
 > August 4, 2024
