@@ -31,6 +31,10 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
     - Click the "Get Utility Class" button.
     - The extension will insert the correct TailwindCSS class at your cursor position.
 
+    ![Get tailwindcss utility class 01](https://raw.githubusercontent.com/JosenRomero/easy-tailwindcss/main/images/get_tailwindcss_utility_class_01.gif)
+
+    ![Get tailwindcss utility class 02](https://raw.githubusercontent.com/JosenRomero/easy-tailwindcss/main/images/get_tailwindcss_utility_class_02.gif)
+
   - **Using a Command:**
 
     This method avoids keeping the sidebar open and can be more convenient if you are not constantly using the sidebar with the extension open.
