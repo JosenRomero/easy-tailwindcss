@@ -72,6 +72,16 @@ export async function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand("easy-tailwindcss.removeAPIkey", async () => {
 
+      let response = await vscode.window.showInformationMessage(
+        "Are you sure you want to REMOVE api key",
+        { modal: true },
+        "Yes", "No"
+      );
+
+      if (response !== "Yes") {
+        return;
+      }
+
       if (apikey) {
         await context.secrets.delete("apikey");
         isConnection = false;
