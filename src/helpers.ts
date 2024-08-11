@@ -22,7 +22,7 @@ export const insertText = async (text: string) => {
   } else {
 
     await vscode.env.clipboard.writeText(text);
-    vscode.window.showInformationMessage("No file is currently open. The TailwindCSS class has been copied to the clipboard.");
+    vscode.window.showInformationMessage("The TailwindCSS class has been copied to the clipboard.");
 
   }
 
