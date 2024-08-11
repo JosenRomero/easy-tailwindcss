@@ -44,6 +44,8 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
     - Enter your description in the prompt, for example, "fixed background".
     - The extension will insert the correct TailwindCSS class at your cursor position.
 
+    ![Get tailwindcss utility class 03](https://raw.githubusercontent.com/JosenRomero/easy-tailwindcss/main/images/get_tailwindcss_utility_class_03.gif)
+
 
 ## Features
 
