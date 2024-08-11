@@ -2,11 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+#### v0.6.1
+
+> August 11, 2024
+
+  - add gifs to README file
+  - refactor the 'removeAPIkey' command
+
 #### v0.6.0
 
 > August 9, 2024
 
   - feat: add a confirmation box when deleting api key
+  - automate release and publish process
 
 #### v0.5.3
 
