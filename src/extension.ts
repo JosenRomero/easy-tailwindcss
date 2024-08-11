@@ -72,6 +72,11 @@ export async function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand("easy-tailwindcss.removeAPIkey", async () => {
 
+      if (!apikey) {
+        vscode.window.showInformationMessage("No API key found.");
+        return;
+      }
+
       let response = await vscode.window.showInformationMessage(
         "Are you sure you want to REMOVE api key",
         { modal: true },
@@ -82,14 +87,10 @@ export async function activate(context: vscode.ExtensionContext) {
         return;
       }
 
-      if (apikey) {
-        await context.secrets.delete("apikey");
-        isConnection = false;
-        apikey = undefined;
-        vscode.window.showInformationMessage("Your API key has been removed.");
-      } else {
-        vscode.window.showInformationMessage("No API key found.");
-      }
+      await context.secrets.delete("apikey");
+      isConnection = false;
+      apikey = undefined;
+      vscode.window.showInformationMessage("Your API key has been removed.");
 
     })
   );
