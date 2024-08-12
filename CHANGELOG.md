@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+#### v0.6.2
+
+> August 12, 2024
+
+  - fix: the color of buttons and input
+
 #### v0.6.1
 
 > August 11, 2024
