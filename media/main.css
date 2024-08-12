@@ -4,21 +4,21 @@
 }
 
 #addMessage {
-  background-color: #333;
-  color: white;
+  background-color: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
   margin: 10px 0px;
-  border: none;
+  border: 1px solid var(--vscode-input-border);
   border-radius: .5rem;
   padding: .625rem;
 }
 
 #addMessage:focus {
-  outline: 1px solid #0d6efd;
+  outline: 1px solid var(--vscode-inputOption-activeBorder);
 }
 
 #btn-addMessage, #btn-addAPIkey {
-  color: white;
-  background-color: #0d6efd;
+  color: var(--vscode-button-foreground);
+  background-color: var(--vscode-button-background);
   margin: 10px 0px;
   border: none;
   padding: .625rem 1.25rem;
@@ -27,8 +27,8 @@
   cursor: pointer;
 }
 
-#btn-addMessage:hover {
-  background-color: #0b5ed7;
+#btn-addMessage:hover, #btn-addAPIkey:hover {
+  background-color: var(--vscode-button-hoverBackground);
 }
 
 a {
