@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+#### v0.6.3
+
+> August 15, 2024
+
+  - optimize the icon
+
 #### v0.6.2
 
 > August 12, 2024
