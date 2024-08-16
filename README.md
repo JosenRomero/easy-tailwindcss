@@ -59,6 +59,12 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
 - **Help and Feedback Panel**:
   - Access documentation and feedback links for any questions or issues you may have with the extension.
 
+## Contributing
+
+Something missing? [Create a pull request](https://github.com/JosenRomero/easy-tailwindcss/pulls)
+
+Found a bug? [Create an issue](https://github.com/JosenRomero/easy-tailwindcss/issues)
+
 ## Notes
 This extension is not an official TailwindCSS product. 
 It is a third-party tool designed to enhance your development experience with TailwindCSS.
