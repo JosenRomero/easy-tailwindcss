@@ -103,13 +103,13 @@
     "@vscode/test-electron": "^2.4.0",
     "eslint": "^8.57.0",
     "ts-loader": "^9.5.1",
-    "typescript": "^5.4.5",
+    "typescript": "^5.5.4",
     "webpack": "^5.92.1",
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "@ai-sdk/google": "^0.0.30",
-    "ai": "^3.2.37"
+    "@ai-sdk/google": "^0.0.39",
+    "ai": "^3.3.9"
   },
   "license": "SEE LICENSE IN LICENSE.txt"
 }
