@@ -69,6 +69,14 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
 | showTailwindCSSHelperView | true    | Show or hide the TailwindCSS Helper view. |
 | showHelpAndFeedbackView   | true    | Show or hide the Help And Feedback view.  |
 
+## Commands
+
+| Command id                             | 	Title                   | Description                                                            |
+|----------------------------------------|--------------------------|------------------------------------------------------------------------|
+| easy-tailwindcss.askAPIkey             | Add your API key         | Enter your Gemini API key to enable communication with the AI service. |
+| easy-tailwindcss.removeAPIkey          | Remove your API key      | Removes the stored API key from the extension.                         |
+| easy-tailwindcss.helpMeWithTailwindCss | Help me with TailwindCss |	Allows to request a TailwindCSS utility class based on a description.  |
+
 ## Contributing
 
 Something missing? [Create a pull request](https://github.com/JosenRomero/easy-tailwindcss/pulls)
