@@ -59,6 +59,16 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
 - **Help and Feedback Panel**:
   - Access documentation and feedback links for any questions or issues you may have with the extension.
 
+## Settings
+
+> **Easy TailwindCss** extension settings start with `easy-tailwindcss`.
+
+| Setting                   | Default | Description                               |
+|---------------------------|---------|-------------------------------------------|
+| showConnectionView        | true    | Show or hide the Connection view.         |
+| showTailwindCSSHelperView | true    | Show or hide the TailwindCSS Helper view. |
+| showHelpAndFeedbackView   | true    | Show or hide the Help And Feedback view.  |
+
 ## Contributing
 
 Something missing? [Create a pull request](https://github.com/JosenRomero/easy-tailwindcss/pulls)

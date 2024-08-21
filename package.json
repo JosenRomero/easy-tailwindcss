@@ -54,19 +54,19 @@
           "type": "webview",
           "id": "easy-tailwindcss.connectionView",
           "name": "Connection",
-          "when": "config.showConnectionView == true"
+          "when": "config.easy-tailwindcss.showConnectionView == true"
         },
         {
           "type": "webview",
           "id": "easy-tailwindcss.tailwindCssHelperView",
           "name": "TailwindCSS Helper",
-          "when": "config.showTailwindCSSHelperView == true"
+          "when": "config.easy-tailwindcss.showTailwindCSSHelperView == true"
         },
         {
           "type": "webview",
           "id": "easy-tailwindcss.helpAndFeedbackView",
           "name": "Help And Feedback",
-          "when": "config.showHelpAndFeedbackView == true"
+          "when": "config.easy-tailwindcss.showHelpAndFeedbackView == true"
         }
       ]
     },
@@ -87,17 +87,17 @@
     "configuration": {
       "title": "Easy Tailwind",
       "properties": {
-        "showConnectionView": {
+        "easy-tailwindcss.showConnectionView": {
           "type": "boolean",
           "default": true,
           "description": "Show or hide the Connection view."
         },
-        "showTailwindCSSHelperView": {
+        "easy-tailwindcss.showTailwindCSSHelperView": {
           "type": "boolean",
           "default": true,
           "description": "Show or hide the TailwindCSS Helper view."
         },
-        "showHelpAndFeedbackView": {
+        "easy-tailwindcss.showHelpAndFeedbackView": {
           "type": "boolean",
           "default": true,
           "description": "Show or hide the Help And Feedback view."
