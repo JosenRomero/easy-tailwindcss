@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+#### v0.7.0
+
+> August 20, 2024
+
+  - add configuration options
+  - setup for the tests
+  - fix(build): typescript config
+  - chore: update typescript and ai
+  - doc: add contributing section in the README file
+
 #### v0.6.3
 
 > August 15, 2024
