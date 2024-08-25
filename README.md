@@ -22,7 +22,16 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
   
 3. **Get TailwindCSS utility class**
 
-  There are two ways to obtain the TailwindCSS utility class:
+  There are 3 ways to obtain the TailwindCSS utility class:
+
+  - **Inline Tailwind Utility Generation**
+
+    Open a file and type a descriptive message directly within `class` or `className` and between `|` characters..
+
+    for example 
+    ```className="|fixed background|"```
+
+    ![Get tailwindcss utility class 01](https://raw.githubusercontent.com/JosenRomero/easy-tailwindcss/main/images/get_tailwindcss_utility_class_01.gif)
 
   - **Using the Sidebar Panel**
 
@@ -30,8 +39,6 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
     - In the input field, describe the utility class you need, for example, "fixed background".
     - Click the "Get Utility Class" button.
     - The extension will insert the correct TailwindCSS class at your cursor position.
-
-    ![Get tailwindcss utility class 01](https://raw.githubusercontent.com/JosenRomero/easy-tailwindcss/main/images/get_tailwindcss_utility_class_01.gif)
 
     ![Get tailwindcss utility class 02](https://raw.githubusercontent.com/JosenRomero/easy-tailwindcss/main/images/get_tailwindcss_utility_class_02.gif)
 
