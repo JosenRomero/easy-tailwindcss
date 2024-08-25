@@ -4,7 +4,7 @@
   "description": "Easy TailwindCss is designed to help you get classes without needing to remember the exact TailwindCSS syntax.",
   "publisher": "josenromero",
   "icon": "media/easy-tailwind-icon.png",
-  "version": "0.7.0",
+  "version": "0.8.1",
   "repository": {
     "url": "https://github.com/JosenRomero/easy-tailwindcss"
   },
