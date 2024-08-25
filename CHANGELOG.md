@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+#### v0.8.0
+
+> August 25, 2024
+
+  - doc: update README file
+  - feat: In-Editor Tailwind Utility Generation functionality
+  - doc: add commands section in the README file
+  - doc: add settings section in the README file
+
 #### v0.7.0
 
 > August 20, 2024
