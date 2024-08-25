@@ -27,3 +27,51 @@ export const insertText = async (text: string) => {
   }
 
 };
+
+export const insertTextInARange = (text: string, range: vscode.Range, newPosition: vscode.Position) => {
+
+  const editor = vscode.window.activeTextEditor;
+
+  if (!editor) {
+    vscode.window.showInformationMessage("No editor is active");
+    return;
+  }
+
+  editor.edit((editBuilder: vscode.TextEditorEdit) => {
+
+    editBuilder.replace(range, text);
+
+  }).then(() => {
+    
+    editor.selection = new vscode.Selection(newPosition, newPosition);
+
+  });
+
+};
+
+export const searchMessage = (text: string): string | undefined => {
+
+  const completePattern = /(?:class|className)=["'][^|<>"']*[\|][^|<>"']+\|/;
+  const removePattern = /(?:class|className)=["'][^|<>"']*[\|]/;
+
+  const match = text.match(completePattern); // class='|message|'
+
+  if (!match || match.length > 1) {
+    return;
+  }
+
+  const message: string = match[0].replace(removePattern, "").slice(0, -1); // message
+
+  return message;
+  
+};
+
+export const getLine = (): vscode.TextLine | undefined => {
+
+  const editor = vscode.window.activeTextEditor;
+
+  const line = editor?.document.lineAt(editor?.selection.active);
+
+  return line;
+
+};

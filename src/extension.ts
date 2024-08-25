@@ -1,6 +1,7 @@
 import * as vscode from 'vscode';
 import * as commands from "./commands";
 import * as providers from "./providers";
+import { handleTextChange } from "./listeners/HandleTextChange";
 import { createGoogleGenerativeAI, GoogleGenerativeAIProvider } from "@ai-sdk/google";
 
 export let genAI: GoogleGenerativeAIProvider;
@@ -93,6 +94,11 @@ export async function activate(context: vscode.ExtensionContext) {
       vscode.window.showInformationMessage("Your API key has been removed.");
 
     })
+  );
+
+  // Register the text change event listener
+  context.subscriptions.push(
+    vscode.workspace.onDidChangeTextDocument(handleTextChange)
   );
 
 }
