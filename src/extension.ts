@@ -84,27 +84,32 @@ export async function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
     vscode.commands.registerCommand("easy-tailwindcss.askAPIkey", async () => {
 
-      current_iaProvider = await vscode.window.showQuickPick(AI_PROVIDERS_ARRAY, {
+      let new_iaProvider: string | undefined = await vscode.window.showQuickPick(AI_PROVIDERS_ARRAY, {
         canPickMany: false,
         placeHolder: 'Select an AI provider'
       });
 
-      if (!current_iaProvider) {
+      if (!new_iaProvider) {
         return;
       }
 
-      apikey = await vscode.window.showInputBox({
-        prompt: `Enter your ${current_iaProvider} API key`,
+      let new_apikey: string | undefined = await vscode.window.showInputBox({
+        prompt: `Enter your ${new_iaProvider} API key`,
         password: true
       });
-	
-      if (apikey) {
-        await context.secrets.store("currentModel", current_iaProvider);
-        await context.secrets.store("apikey", apikey);
-        providerConfig(apikey, current_iaProvider);
-        vscode.window.showInformationMessage("API key successfully added!");
+
+      if (!new_apikey) {
+        return;
       }
 
+      current_iaProvider = new_iaProvider;
+      apikey = new_apikey;
+	
+      await context.secrets.store("currentModel", new_iaProvider);
+      await context.secrets.store("apikey", new_apikey);
+      providerConfig(new_apikey, new_iaProvider);
+      vscode.window.showInformationMessage("API key successfully added!");
+      
     })
   );
 
@@ -130,6 +135,7 @@ export async function activate(context: vscode.ExtensionContext) {
       await context.secrets.delete("apikey");
       isConnection = false;
       apikey = undefined;
+      current_iaProvider = undefined;
       vscode.window.showInformationMessage("Your API key has been removed.");
 
     })
