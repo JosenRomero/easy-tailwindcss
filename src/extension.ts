@@ -137,12 +137,6 @@ export async function activate(context: vscode.ExtensionContext) {
   // Register the text change event listener
   context.subscriptions.push(
     vscode.workspace.onDidChangeTextDocument((event: vscode.TextDocumentChangeEvent) => {
-
-      if (!current_iaProvider) {
-        vscode.window.showErrorMessage("You need to add an API key");
-        return;
-      }
-
       handleTextChange(event, current_iaProvider);
     })
   );

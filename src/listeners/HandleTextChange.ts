@@ -4,7 +4,7 @@ import aiMessage from "../lib/aiMessage";
 import {searchMessage, getLine, insertTextInARange} from "../helpers";
 import { AI_PROVIDERS } from '../models/IAmodels';
 
-export const handleTextChange = (event: vscode.TextDocumentChangeEvent, currentModel: string): void => {
+export const handleTextChange = (event: vscode.TextDocumentChangeEvent, currentModel: string | undefined): void => {
   const pattern: RegExp = /[\|]/;
 
   for (const change of event.contentChanges) {
@@ -17,7 +17,7 @@ export const handleTextChange = (event: vscode.TextDocumentChangeEvent, currentM
 
 };
 
-export const getTailwindCssInsideTheEditor = async (currentModel: string): Promise<void> => {
+export const getTailwindCssInsideTheEditor = async (currentModel: string | undefined): Promise<void> => {
 
   try {
 
@@ -31,6 +31,11 @@ export const getTailwindCssInsideTheEditor = async (currentModel: string): Promi
     const message: string | undefined = searchMessage(line.text);
 
     if (!message) {
+      return;
+    }
+
+    if (!currentModel) {
+      vscode.window.showErrorMessage("You need to add an API key");
       return;
     }
 
