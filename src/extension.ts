@@ -94,7 +94,8 @@ export async function activate(context: vscode.ExtensionContext) {
       }
 
       apikey = await vscode.window.showInputBox({
-        prompt: `Enter your ${current_iaProvider} API key`
+        prompt: `Enter your ${current_iaProvider} API key`,
+        password: true
       });
 	
       if (apikey) {
