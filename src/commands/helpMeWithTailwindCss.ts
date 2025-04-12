@@ -3,8 +3,9 @@ import { APICallError } from "ai";
 import aiMessage from "../lib/aiMessage";
 import { insertText } from "../helpers";
 import { isConnection } from "../extension";
+import { AI_PROVIDERS} from "../models/IAmodels";
 
-const helpMeWithTailwindCss = async () => {
+const helpMeWithTailwindCss = async (ia_provider: string) => {
 
   try {
 
@@ -21,7 +22,7 @@ const helpMeWithTailwindCss = async () => {
       return;
     }
   
-    const res = await aiMessage(message);
+    const res = await aiMessage(message, ia_provider as AI_PROVIDERS);
 
     insertText(res);
     

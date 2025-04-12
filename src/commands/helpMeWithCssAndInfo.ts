@@ -3,8 +3,9 @@ import { APICallError } from "ai";
 import aiMessage from "../lib/aiMessage";
 import { insertText } from "../helpers";
 import { isConnection } from "../extension";
+import { AI_PROVIDERS } from "../models/IAmodels";
 
-const helpMeWithCssAndInfo = async (text: string) => {
+const helpMeWithCssAndInfo = async (text: string, ia_provider: string) => {
 
   try {
 
@@ -18,7 +19,7 @@ const helpMeWithCssAndInfo = async (text: string) => {
       return;
     }
 
-    const res = await aiMessage(text);
+    const res = await aiMessage(text, ia_provider as AI_PROVIDERS);
 
     insertText(res);
     

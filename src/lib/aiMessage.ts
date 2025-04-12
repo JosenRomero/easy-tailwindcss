@@ -1,12 +1,13 @@
 import { generateText } from "ai";
-import { genAI } from "../extension";
+import { AI_PROVIDERS } from "../models/IAmodels";
 import { instruction } from "./utils";
+import { getModel } from "./getModel";
 
-const aiMessage = async (message: string): Promise<string> => {
+const aiMessage = async (message: string, currentModel: AI_PROVIDERS): Promise<string> => {
   try {
 
     const { text } = await generateText({
-      model: genAI('models/gemini-1.5-pro-latest'),
+      model: getModel(currentModel),
       system: instruction,
       prompt: message
     });

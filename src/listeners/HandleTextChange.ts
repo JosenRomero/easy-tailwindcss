@@ -2,21 +2,22 @@ import * as vscode from 'vscode';
 import { APICallError } from "ai";
 import aiMessage from "../lib/aiMessage";
 import {searchMessage, getLine, insertTextInARange} from "../helpers";
+import { AI_PROVIDERS } from '../models/IAmodels';
 
-export const handleTextChange = (event: vscode.TextDocumentChangeEvent): void => {
+export const handleTextChange = (event: vscode.TextDocumentChangeEvent, currentModel: string): void => {
   const pattern: RegExp = /[\|]/;
 
   for (const change of event.contentChanges) {
     const text = change.text;
     const match = pattern.exec(text);
     if (match) {
-      getTailwindCssInsideTheEditor();
+      getTailwindCssInsideTheEditor(currentModel);
     }
   }
 
 };
 
-export const getTailwindCssInsideTheEditor = async (): Promise<void> => {
+export const getTailwindCssInsideTheEditor = async (currentModel: string): Promise<void> => {
 
   try {
 
@@ -33,7 +34,7 @@ export const getTailwindCssInsideTheEditor = async (): Promise<void> => {
       return;
     }
 
-    const res: string = await aiMessage(message);
+    const res: string = await aiMessage(message, currentModel as AI_PROVIDERS);
     const response: string = res.trim();
     
     // Replace the message with the response
