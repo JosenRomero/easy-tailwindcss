@@ -20,15 +20,15 @@
     "commands": [
       {
         "command": "easy-tailwindcss.helpMeWithTailwindCss",
-        "title": "Help me with TailwindCss"
+        "title": "Easy TailwindCss: Help me with TailwindCss"
       },
       {
         "command": "easy-tailwindcss.helpMeWithCssAndInfo",
-        "title": "Help me with Css and Information"
+        "title": "Easy TailwindCss: Help me with Css and Information"
       },
       {
         "command": "easy-tailwindcss.askAPIkey",
-        "title": "Add your API key",
+        "title": "Easy TailwindCss: Add your API key",
         "icon": {
           "light": "media/light/add.svg",
           "dark": "media/dark/add.svg"
@@ -36,7 +36,7 @@
       },
       {
         "command": "easy-tailwindcss.removeAPIkey",
-        "title": "Remove your API key"
+        "title": "Easy TailwindCss: Remove your API key"
       }
     ],
     "viewsContainers": {
