@@ -11,7 +11,7 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
 
 ## 🚀 Usage
 
-- Follow these steps to use the Easy TailwindCss Extension:
+Follow these steps to use the Easy TailwindCss Extension:
 
 1. **Installation**
   - Go to the Visual Studio Code Marketplace and search for "Easy TailwindCss".
@@ -62,10 +62,15 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
 ## ✨ Features
 
 - 🌍 Natural Language to Tailwind.
+
   Describe styles in English, Spanish or Japanese (e.g., "navbar with dark background and hover effects" or "texto centrado y de color negro" or "かわいいテキスト"), and get precise Tailwind classes.
+
 - 🤖 Multi-AI Support.
+
   Gemini, Groq.
+
 - ⚡Inline Tailwind Utility classes Generation.
+
   Write `className="|your descriptive message|"` → **Automatically replaced** with AI-generated classes.
 
 ## ⚙️ Settings
