@@ -134,6 +134,7 @@
   },
   "dependencies": {
     "@ai-sdk/google": "^0.0.39",
+    "@ai-sdk/groq": "^1.2.7",
     "ai": "^3.3.9"
   },
   "license": "SEE LICENSE IN LICENSE.txt"

@@ -1,6 +1,6 @@
 export enum AI_PROVIDERS {
   GEMINI = "Gemini",
-  DEEPSEEK = "Deepseek"
+  GROQ = "Groq"
 }
 
 export const AI_PROVIDERS_ARRAY = Object.values(AI_PROVIDERS);

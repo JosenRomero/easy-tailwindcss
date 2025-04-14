@@ -1,7 +1,8 @@
 import { createGoogleGenerativeAI, GoogleGenerativeAIProvider } from "@ai-sdk/google";
+import { createGroq, GroqProvider } from '@ai-sdk/groq';
 import { AI_PROVIDERS } from '../models/IAmodels';
 
-export let currentAI: GoogleGenerativeAIProvider;
+export let currentAI: GoogleGenerativeAIProvider | GroqProvider;
 
 export class ProviderConfigService {
 
@@ -12,6 +13,9 @@ export class ProviderConfigService {
       switch (currentIAmodel) {
         case AI_PROVIDERS.GEMINI:
           currentAI = createGoogleGenerativeAI({ apiKey });
+          break;
+        case AI_PROVIDERS.GROQ:
+          currentAI = createGroq({ apiKey });
           break;
         default:
           throw new Error("Provider not supported");
