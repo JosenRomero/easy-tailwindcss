@@ -9,7 +9,7 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
 > [!NOTE]
 > This extension is not an official TailwindCSS product. It is a third-party tool designed to enhance your development experience with TailwindCSS.
 
-## Usage
+## 🚀 Usage
 
 - Follow these steps to use the Easy TailwindCss Extension:
 
@@ -20,7 +20,8 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
 2. **API Key Setup**
   - Open the "Connection" panel from the sidebar.
   - Click the "Add your API key" button.
-  - Enter your Gemini API key in the input field and press `Enter` to save it.
+  - Select an AI provider (Gemini or Groq).
+  - Enter your API key in the input field and press `Enter` to save it.
 
   ![Add api key](https://raw.githubusercontent.com/JosenRomero/easy-tailwindcss/main/images/add_api_key.gif)
   
@@ -58,19 +59,16 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
     ![Get tailwindcss utility class 03](https://raw.githubusercontent.com/JosenRomero/easy-tailwindcss/main/images/get_tailwindcss_utility_class_03.gif)
 
 
-## Features
+## ✨ Features
 
-- **Connection Panel**:
-  - Easily enter your Gemini API key to enable communication with the AI service.
+- 🌍 Natural Language to Tailwind.
+  Describe styles in English, Spanish or Japanese (e.g., "navbar with dark background and hover effects" or "texto centrado y de color negro" or "かわいいテキスト"), and get precise Tailwind classes.
+- 🤖 Multi-AI Support.
+  Gemini, Groq.
+- ⚡Inline Tailwind Utility classes Generation.
+  Write `className="|your descriptive message|"` → **Automatically replaced** with AI-generated classes.
 
-- **TailwindCSS Helper Panel**:
-  - Enter a description of the utility you want to apply (e.g., "A black background" or "div centrado" or "かわいいテキスト") and receive the corresponding TailwindCSS class from Gemini's API.
-  - Use the input field and button to quickly get the class without needing to remember the exact TailwindCSS syntax.
-
-- **Help and Feedback Panel**:
-  - Access documentation and feedback links for any questions or issues you may have with the extension.
-
-## Settings
+## ⚙️ Settings
 
 > **Easy TailwindCss** extension settings start with `easy-tailwindcss`.
 
@@ -84,7 +82,7 @@ It provides a convenient way to find and apply TailwindCSS utility classes direc
 
 | Command id                             | 	Title                   | Description                                                            |
 |----------------------------------------|--------------------------|------------------------------------------------------------------------|
-| easy-tailwindcss.askAPIkey             | Add your API key         | Enter your Gemini API key to enable communication with the AI service. |
+| easy-tailwindcss.askAPIkey             | Add your API key         | Enter your API key to enable communication with the AI service. |
 | easy-tailwindcss.removeAPIkey          | Remove your API key      | Removes the stored API key from the extension.                         |
 | easy-tailwindcss.helpMeWithTailwindCss | Help me with TailwindCss |	Allows to request a TailwindCSS utility class based on a description.  |
 
@@ -94,6 +92,6 @@ Something missing? [Create a pull request](https://github.com/JosenRomero/easy-t
 
 Found a bug? [Create an issue](https://github.com/JosenRomero/easy-tailwindcss/issues)
 
-## License
+## 🔑 License
 
 This project is licensed under the Apache License 2.0. See the [LICENSE](https://github.com/JosenRomero/easy-tailwindcss/blob/main/LICENSE.txt) file for details.
