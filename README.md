@@ -18,12 +18,24 @@ Follow these steps to use the Easy TailwindCss Extension:
   - Click "Install" to add the extension to your Visual Studio Code.
 
 2. **API Key Setup**
-  - Open the "Connection" panel from the sidebar.
-  - Click the "Add your API key" button.
-  - Select an AI provider (Gemini or Groq).
-  - Enter your API key in the input field and press `Enter` to save it.
 
-  ![Add api key](https://raw.githubusercontent.com/JosenRomero/easy-tailwindcss/main/images/add_api_key.gif)
+  There are 2 ways to API key setup:
+
+  - **Using the Sidebar Panel**
+
+    - Open the "Connection" panel from the sidebar.
+    - Click the "Add your API key" button.
+    - Select an AI provider (Gemini or Groq).
+    - Enter your API key in the input field and press `Enter` to save it.
+
+    ![Add api key](https://raw.githubusercontent.com/JosenRomero/easy-tailwindcss/main/images/add_api_key.gif)
+
+  - **Using a Command:**
+
+    - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the Command Palette.
+    - Type `Easy TailwindCss: Add your API key` and select the command.
+    - Select an AI provider (Gemini or Groq).
+    - Enter your API key in the input field and press `Enter` to save it.
   
 3. **Get TailwindCSS utility class**
 
@@ -52,8 +64,8 @@ Follow these steps to use the Easy TailwindCss Extension:
     This method avoids keeping the sidebar open and can be more convenient if you are not constantly using the sidebar with the extension open.
 
     - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the Command Palette.
-    - Type `Help me with TailwindCss` and select the command.
-    - Enter your description in the prompt, for example, "fixed background".
+    - Type `Easy TailwindCss: Help me with TailwindCss` and select the command.
+    - In the input field, describe the utility class you need and press `Enter`.
     - The extension will insert the correct TailwindCSS class at your cursor position.
 
     ![Get tailwindcss utility class 03](https://raw.githubusercontent.com/JosenRomero/easy-tailwindcss/main/images/get_tailwindcss_utility_class_03.gif)
@@ -85,11 +97,12 @@ Follow these steps to use the Easy TailwindCss Extension:
 
 ## Commands
 
-| Command id                             | 	Title                   | Description                                                            |
-|----------------------------------------|--------------------------|------------------------------------------------------------------------|
-| easy-tailwindcss.askAPIkey             | Add your API key         | Enter your API key to enable communication with the AI service. |
-| easy-tailwindcss.removeAPIkey          | Remove your API key      | Removes the stored API key from the extension.                         |
-| easy-tailwindcss.helpMeWithTailwindCss | Help me with TailwindCss |	Allows to request a TailwindCSS utility class based on a description.  |
+| Command id                             | 	Title                           | Description                                                              |
+|----------------------------------------|----------------------------------|--------------------------------------------------------------------------|
+| easy-tailwindcss.askAPIkey             | Add your API key                 | Enter your API key to enable communication with the AI service.          |
+| easy-tailwindcss.removeAPIkey          | Remove your API key              | Removes the stored API key from the extension.                           |
+| easy-tailwindcss.helpMeWithTailwindCss | Help me with TailwindCss         |	Generate Tailwind CSS utility classes.                                   |
+| easy-tailwindcss.helpMeWithCssAndInfo  | Help me with Css and Information | (Internal use) Generates Tailwind CSS utility classes via sidebar input. |
 
 ## Contributing
 
