@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+#### v0.8.2
+
+> April 15, 2025
+
+  - docs: update usage and commands sections
+  - feat: Translate system prompt to English for consistency
+  - docs: udpate features section
+  - feat: add groq provider
+  - feat: change the title of the commands
+  - feat: add password masking to API key input
+  - feat: ai provider configuration
+  - test: add unit tests for extension activation and command registration
+
 #### v0.8.1
 
 > August 25, 2024
