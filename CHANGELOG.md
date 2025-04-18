@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+#### v0.8.3
+
+> April 18, 2025
+
+  - feat: add `onStartupFinished` activation event
+
 #### v0.8.2
 
 > April 15, 2025
