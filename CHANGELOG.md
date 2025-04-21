@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+#### v0.8.4
+
+> April 21, 2025
+
+  - chore: exclude images folder from production build
+
 #### v0.8.3
 
 > April 18, 2025
